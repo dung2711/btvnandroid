@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvDisplay"
+            android:layout_width="391dp"
+            android:layout_height="200dp"
+            android:background="#E0E0E0"
+            android:gravity="end|center_vertical"
+            android:padding="20dp"
+            android:text="0"
+            android:textColor="#000"
+            android:textSize="36sp" />
+
+        <GridLayout
+            android:layout_width="416dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/white"
+            android:columnCount="4"
+            android:padding="10dp"
+            android:rowCount="5">
+
+            <!-- First Row -->
+            <Button
+                android:id="@+id/btnCE"
+                style="@style/CalcButton"
+                android:text="CE"
+                app:backgroundTint="@null"
+                />
+
+            <Button
+                android:id="@+id/btnC"
+                style="@style/CalcButton"
+                android:text="C"
+                app:backgroundTint="@null"/>
+
+            <Button
+                android:id="@+id/btnBS"
+                style="@style/CalcButton"
+                android:text="BS"
+                app:backgroundTint="@null"/>
+
+            <Button
+                android:id="@+id/btnDivide"
+                style="@style/CalcButton"
+                android:text="/"
+                app:backgroundTint="@null"/>
+
+            <!-- Second Row -->
+            <Button
+                android:id="@+id/btn7"
+                style="@style/CalcButton"
+                android:text="7"
+                app:backgroundTint="@null"/>
+
+            <Button
+                android:id="@+id/btn8"
+                style="@style/CalcButton"
+                android:text="8"
+                app:backgroundTint="@null"/>
+
+            <Button
+                android:id="@+id/btn9"
+                style="@style/CalcButton"
+                android:text="9"
+                app:backgroundTint="@null"/>
+
+            <Button
+                android:id="@+id/btnMultiply"
+                style="@style/CalcButton"
+                android:text="x"
+                app:backgroundTint="@null"/>
+
+            <!-- Third Row -->
+            <Button
+                android:id="@+id/btn4"
+                style="@style/CalcButton"
+                android:text="4"
+                app:backgroundTint="@null"/>
+
+            <Button
+                android:id="@+id/btn5"
+                style="@style/CalcButton"
+                android:text="5"
+                app:backgroundTint="@null"/>
+
+            <Button
+                android:id="@+id/btn6"
+                style="@style/CalcButton"
+                android:text="6"
+                app:backgroundTint="@null"/>
+
+            <Button
+                android:id="@+id/btnMinus"
+                style="@style/CalcButton"
+                android:layout_height="84dp"
+                android:text="-"
+                app:backgroundTint="@null"/>
+
+            <!-- Fourth Row -->
+            <Button
+                android:id="@+id/btn1"
+                style="@style/CalcButton"
+                android:text="1"
+                app:backgroundTint="@null"/>
+
+            <Button
+                android:id="@+id/btn2"
+                style="@style/CalcButton"
+                android:text="2"
+                app:backgroundTint="@null"/>
+
+            <Button
+                android:id="@+id/btn3"
+                style="@style/CalcButton"
+                android:text="3"
+                app:backgroundTint="@null"/>
+
+            <Button
+                android:id="@+id/btnPlus"
+                style="@style/CalcButton"
+                android:text="+"
+                app:backgroundTint="@null"/>
+
+            <!-- Fifth Row -->
+            <Button
+                android:id="@+id/btnSign"
+                style="@style/CalcButton"
+                android:text="+/-"
+                app:backgroundTint="@null"/>
+
+            <Button
+                android:id="@+id/btn0"
+                style="@style/CalcButton"
+                android:text="0"
+                app:backgroundTint="@null"/>
+
+            <Button
+                android:id="@+id/btnDot"
+                style="@style/CalcButton"
+                android:text="."
+                app:backgroundTint="@null"/>
+
+            <Button
+                android:id="@+id/btnEqual"
+                style="@style/CalcButton"
+                android:text="="
+                app:backgroundTint="@null"/>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
